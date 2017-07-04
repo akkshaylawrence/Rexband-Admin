@@ -6,7 +6,7 @@ html {
     display: table;
     margin: auto;
 }
-body {
+body.black {
     display: table-cell;
     vertical-align: middle;
 }
