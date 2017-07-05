@@ -27,7 +27,7 @@
    <div class="content">
       <div class="container">
          <form class="formcenter col s12">
-            <h2>Add Album</h2>
+            <h2>Enter album details</h2>
             <div class="row">
                <div class="input-field col s12">
                   <input id="albumname" type="text" class="validate">
@@ -41,22 +41,43 @@
                </div>
             </div>
             <div class="row">
-               <div class="input-field col s12">
+               <div class="col s1">
+                  <i class="fa fa-apple fa-2x"></i>
+               </div>
+               <div class="input-field col s11">
                   <input id="itunes" type="text" class="validate">
                   <label data-error="Invalid Link!" for="itunes">Itunes Link</label>
                </div>
             </div>
             <div class="row">
-               <div class="input-field col s12">
-                  <input id="googlep" type="text" class="validate">
-                  <label data-error="Invalid Link!" for="googlep">Play Music Link</label>
+               <div class="col s1">
+                  <i class="fa fa-soundcloud fa-2x"></i>
+               </div>
+               <div class="input-field col s11">
+                  <input id="soundc" type="text" class="validate">
+                  <label data-error="Invalid Link!" for="soundc">Soundcloud Link</label>
                </div>
             </div>
             <div class="row">
-               <div class="input-field col s12">
+               <div class="col s1">
+                  <i class="fa fa-youtube-play fa-2x"></i>
+               </div>
+               <div class="input-field col s11">
                   <input id="ytube" type="text" class="validate">
                   <label data-error="Invalid Link!" for="ytube">YouTube Link</label>
                </div>
+            </div>
+            <h3>Songs</h3>
+            <div class="row songlist">
+               <div class="input-field col s11">
+                  <input id="nosong" type="text" class="validate">
+                  <label data-error="Invalid number!" for="nosong">Number of songs</label>
+               </div>
+               <div class="col s1">
+                  <a href="#" onclick="addRow()"><i class="fa fa-check fa-2x"></i></a>
+               </div>
+            </div>
+            <div id="list">
             </div>
          </form>
       </div>
@@ -68,5 +89,7 @@
 <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
 <script type="text/javascript" src="js/fbinit.js"></script>
 <script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/album.js"></script>
+<script src="https://use.fontawesome.com/03a4b7b82e.js"></script>
 
 </html>
