@@ -1,0 +1,11 @@
+div.container {
+   display: table;
+   margin: auto;
+}
+form.formcenter.col.s12 {
+   min-width: 310px;
+   max-width: 600px;
+   height: 100%;
+   display: table-cell;
+   vertical-align: middle;
+}
