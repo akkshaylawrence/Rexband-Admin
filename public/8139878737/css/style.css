@@ -95,9 +95,6 @@ form>h2 {
    margin-top: 0px;
 }
 .row.songlist {
-   margin-top: 10px;
-   padding: 5px 20px 20px 20px;
-   border: 1px solid #9e9e9e;
    border-radius: 5px;
 }
 .formcenter.col.s12>.row.songlist {
@@ -105,4 +102,7 @@ form>h2 {
 }
 div.col.s1{
    margin-top: 25px;
+}
+#albtn{
+   margin-top: 10px;
 }
