@@ -1,4 +1,5 @@
 function addRow() {
+    document.getElementById("albtn").classList.remove("disabled")
     var number = document.getElementById('nosong').value;
     number = parseInt(number);
     var container = document.getElementById("list");
