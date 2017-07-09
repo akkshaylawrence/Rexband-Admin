@@ -57,7 +57,12 @@ albtn.addEventListener('click', function () {
     var alb = albumname.value;
     var file = document.getElementById('fileb').files[0];
     var albumart = firebase.storage().ref('Albumart/' + alb);
-    var task = albumart.put(file);
+    var task = albumart.put(file).then(function(snapshot) {
+    var url = snapshot.downloadURL;
+     database.ref('Music/'+alb+'/').update({
+            albumart_dlink: url
+        })
+    });
     var no = document.getElementById('nosong').value;
     no = parseInt(no);
     for (i = 1; i <= no; i++) {
