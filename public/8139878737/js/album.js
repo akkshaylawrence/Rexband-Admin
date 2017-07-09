@@ -1,5 +1,6 @@
 function addRow() {
-    document.getElementById("albtn").classList.remove("disabled")
+    document.getElementById("albtn").classList.remove("disabled");
+    document.getElementById("albtn").style.display="block";
     var number = document.getElementById('nosong').value;
     number = parseInt(number);
     var container = document.getElementById("list");
@@ -8,7 +9,8 @@ function addRow() {
     }
     for (i = 0; i < number; i++) {
         j = i + 1;
-        container.innerHTML += '<div class="row song1" style="margin-top: 10px; padding: 5px 20px 20px; border: 1px solid rgb(158, 158, 158);">\
+        container.innerHTML += '<div class="row song">\
+        <div class="divider"></div>\
    <div class="input-field col.s12">\
       <input type="text" id="song' + j + '">\
       <label for="song' + j + '">Enter song name</label>\
