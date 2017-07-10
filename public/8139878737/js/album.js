@@ -1,4 +1,5 @@
 function addRow() {
+    var i,j;
     document.getElementById("albtn").classList.remove("disabled");
     document.getElementById("albtn").style.display="block";
     var number = document.getElementById('nosong').value;
@@ -46,6 +47,7 @@ function addRow() {
     return;
 }
 albtn.addEventListener('click', function () {
+    var i,j;
     var patha = 'Music/' + albumname.value;
     database.ref(patha).set({
         albumwriteup: albumtext.value,
